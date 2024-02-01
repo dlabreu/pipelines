@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineResource
+metadata:
+  name: windows-vm-source
+spec:
+  type: git
+  params:
+    - name: url
+      value: <repository-url>
+    - name: revision
+      value: <git-revision>
